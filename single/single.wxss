@@ -16,7 +16,7 @@
 .second{
     display: flex;
     flex-direction: column;
-    top: 20%;
+    /* top: 1%; */
     position: relative;
     justify-content: space-around;
 
