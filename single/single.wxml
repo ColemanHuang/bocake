@@ -1,0 +1,23 @@
+<view class="container">
+    <image class="bk1" src="/images/bk1.jpg"></image>
+    <view class="first">
+        <button>返回</button>
+        <button>规则</button>
+        <button>设置</button>
+    </view>
+    <view class="second">
+        <view class="bar1">
+            <image class="rotate" src="/images/{{num[0]}}.png"></image>
+            <image class="rotate" src="/images/{{num[1]}}.png"></image>
+            <image class="rotate" src="/images/{{num[2]}}.png"></image>
+        </view>
+        <view class="bar2">
+            <image class="rotate" src="/images/{{num[3]}}.png"></image>
+            <image class="rotate" src="/images/{{num[4]}}.png"></image>
+            <image class="rotate" src="/images/{{num[5]}}.png"></image>
+        </view>
+    </view>
+    <view class="third">
+        <button class="fight" bindtap="gofight">博一博</button>
+    </view>
+</view>
