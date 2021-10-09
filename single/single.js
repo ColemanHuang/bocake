@@ -6,38 +6,45 @@ Page({
      */
     data: {
         num:[1, 2, 3, 4, 5, 6],
-        rank:[]
+        rank:[],
+        current:0,
+        tx:0,
+        name:['12345678', '林冠禧', '刘鑚熙', '周斌', '胡惇羽'],
+        playerNum:5
     },
 
 
     gofight:function(){
+        var that = this
         var number = [1,1,1,1,1,1]
         var count = [0,0,0,0,0,0,0]
+        
         for (var i = 0; i < 6; i++) {
             number[i] = this.randomNum();
             count[number[i]]++;
         }
         console.log(count)
         this.setData({
-            num:number
+            num:number,
+            // array:
         })
         var rank = '未中奖'
         if (count[4] === 4 && count[1] === 2)
-            rank = '金花';
+            rank = '状元';
         else if (count[4] === 6)
-            rank = '六勃红';
+            rank = '状元';
         else if (count[1] === 6)
-            rank = '遍地锦';
+            rank = '状元';
         else if(count[2] === 6 || count[3] === 6 ||
                 count[5] === 6 || count[6] === 6)
-            rank = '六勃黑';
+            rank = '状元';
         else if (count[4] === 5)
-            rank = '五红';
+            rank = '状元';
         else if(count[1] === 5 || count[2] === 5 || count[3] === 5 ||
                 count[5] === 5 || count[6] === 5)
-            rank = '五子登科';
+            rank = '状元';
         else if (count[4] === 4)
-            rank = '四点红';
+            rank = '状元';
         else if(count[1] === 1 && count[2] ===1 && count[3] === 1 &&
                 count[4] === 1 && count[5] === 1 && count[6] === 1)
             rank = '对堂';
@@ -50,11 +57,31 @@ Page({
             rank = '二举';
         else if (count[4] === 1)
             rank = '一秀';
-        wx.showToast({
-            title: rank,
-            icon: 'none',
-            duration: 1500,
-          })
+        // wx.showToast({
+        //     title: rank,
+        //     icon: 'none',
+        //     duration: 1500,
+        //     // image:'/images/tx2.jpg',
+        //     // mask:false
+        //   })
+        var tx = (this.data.tx + 1) % this.data.playerNum
+        var name = ''
+        wx.showModal({
+            title: '获奖等级',
+            content: rank,
+            showCancel: false,//是否显示取消按钮
+            // cancelText:"确定",//默认是“取消”
+            // cancelColor:'skyblue',//取消文字的颜色
+            confirmText:"确定",//默认是“确定”
+            confirmColor: 'skyblue',//确定文字的颜色
+            success: function (res) {
+                if (res.confirm) {
+                   that.setData({
+                       tx:tx
+                   })
+                }
+             }
+        })
     },
 
 

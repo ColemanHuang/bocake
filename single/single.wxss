@@ -39,5 +39,40 @@
     /* position: relative; */
 }
 .fight{
-    color: red;
+    width: 50%;
+    border-radius: 5%;
+    border: 2px solid black;
+    background-color: rgb(188, 143, 143, 0.9);
+    color: blanchedalmond;
+    font-family:"楷体";
+    font-size:xx-large;
+    font-weight:bold
+}
+/* .players{
+    display: flex;
+    flex-direction: row;
+    top: -10%;
+    position: relative;
+} */
+.player{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    top: -10%;
+    position: relative;
+    width: 160rpx;
+    align-items: center;
+}
+.tx{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    margin: 20rpx;
+}
+.name{
+    background-color: rgb(188, 143, 143, 1);
+    font-size: large;
+    color: white;
+    font-weight:bold;
+    font-family:"宋体"
 }

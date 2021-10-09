@@ -5,6 +5,10 @@
         <button>规则</button>
         <button>设置</button>
     </view>
+    <view class="player">
+        <image class="tx"  src="/images/{{tx}}.png"></image>
+        <text class="name">{{name[tx]}}</text>
+    </view>
     <view class="second">
         <view class="bar1">
             <image class="rotate" src="/images/{{num[0]}}.png"></image>
