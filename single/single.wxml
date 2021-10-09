@@ -1,13 +1,16 @@
 <view class="container">
-    <image class="bk1" src="/images/bk1.jpg"></image>
-    <view class="first">
-        <button>返回</button>
-        <button>规则</button>
-        <button>设置</button>
+    <image class="bk1" src="http://r.photo.store.qq.com/psc?/V512zyaa4DJhfz22XrEJ4HEUjd2FoozA/TmEUgtj9EK6.7V8ajmQrEE2gK*anQ9XuUX5cF7pfMMyjZKurWw4Zo6gai.Cjtb4LE4NIQ623zIZ2UA29wxWQnuVKsMPqAu5tllyUtkJ8qVk!/r"></image>
+    <view class='container'>
+        <button class='publish' bindtap='buttonTap' style="color: black; " plain="true">规则</button>
+        <modal hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
+            <view>
+                <image class="image" src="http://r.photo.store.qq.com/psc?/V512zyaa4DJhfz22XrEJ4HEUjd2FoozA/TmEUgtj9EK6.7V8ajmQrEKjbJMIPZv3U4mMsWCdyjvL4LF2bRLKlEIa69C18EOgYJbEoVZqchMXMesOMXqzvbVY*Or3BsaEZEg5uP73VSdg!/r" mode='aspectFill'></image>
+            </view>
+        </modal>
     </view>
     <view class="player">
-        <image class="tx"  src="/images/{{tx}}.png"></image>
-        <text class="name">{{name[tx]}}</text>
+        <image class="tx" src="/images/{{current}}.jpg"></image>
+        <text class="name">{{player[current].name}}</text>
     </view>
     <view class="second">
         <view class="bar1">
@@ -21,7 +24,10 @@
             <image class="rotate" src="/images/{{num[5]}}.png"></image>
         </view>
     </view>
-    <view class="third">
+    <view class="third" wx:if="{{over==false}}">
         <button class="fight" bindtap="gofight">博一博</button>
+    </view>
+    <view class="third" wx:else>
+        <button class="fight" bindtap="gotoIndex">游戏结束</button>
     </view>
 </view>

@@ -17,6 +17,7 @@
     display: flex;
     flex-direction: column;
     /* top: 1%; */
+    top:-20%;
     position: relative;
     justify-content: space-around;
 
@@ -30,7 +31,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    top: 10%;
+    top:20%;
     position: relative;
 }
 .rotate{
@@ -58,7 +59,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    top: -10%;
+    top: -50%;
     position: relative;
     width: 160rpx;
     align-items: center;
@@ -76,3 +77,17 @@
     font-weight:bold;
     font-family:"宋体"
 }
+.publish{
+    font-size: 20rpx;
+    height: 4vh;
+    width: 4vh;
+    left: 30%;
+    position: relative;
+  }
+  .publish::after{
+    border: 0;
+  }
+  .image {
+    width: 100%;
+    height:1000rpx;
+  }
