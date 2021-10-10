@@ -1,0 +1,43 @@
+<view class="container">
+  <image class="setting" src="http://r.photo.store.qq.com/psc?/V512zyaa4DJhfz22XrEJ4HEUjd2FoozA/TmEUgtj9EK6.7V8ajmQrEFzo.UQQI9bun8hDxhGMJPoEjVwOC2Bkk3oPbrMkGnCLd*YLixcJnLIziNzgSNmAAayvRwnFggY0eGh2IXNsGws!/r"></image>
+  <!-- <image class="background" src="/icon/首页背景.jpg"></image> -->
+  <view class="hezi"></view>
+  <view class="buju">
+    <view class="first">
+      <view class="name">玩家昵称：</view>
+      <input class="" type="text" bindinput="setusername" placeholder="请输入玩家昵称" maxlength="8" />
+    </view>
+    <view class="xiaohezi"></view>
+    <view class="first">
+      <button class="button" bindtap="handleUsername">添加玩家</button>
+    </view>
+  </view>
+  <view class="hezi"></view>
+  <view class="prize">
+    <view class="first" >
+      <view class="name">奖品等级</view>
+      <picker class="right" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">{{array[index]}}</view>
+      </picker>
+    </view>
+    <view class="xiaohezi"></view>
+    <view class="first">
+      <view class="name">奖品名称</view>
+      <input type="text" bindinput="setprizename" placeholder="请输入奖品名称" />
+    </view>
+    <view class="xiaohezi"></view>
+    <view class="first">
+      <view class="name"> 奖品数量 </view>
+      <input type="number" bindinput="setprizenum" placeholder="请输入奖品数量" />
+    </view>
+    <view class="xiaohezi"></view>
+    <view class="first">
+      <button class="button" bindtap="handlePrize">添加奖品</button>
+    </view>
+  </view>
+  <view class="xiaohezi"></view>
+  <navigator url="/pages/single/single">
+    <button class="finish" data-usernum="{{usernum}}">完成设置</button>
+  </navigator>
+
+</view>

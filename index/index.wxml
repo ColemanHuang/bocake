@@ -1,0 +1,23 @@
+<view class="img">
+    <image class="background" src="http://r.photo.store.qq.com/psc?/V512zyaa4DJhfz22XrEJ4HEUjd2FoozA/TmEUgtj9EK6.7V8ajmQrEN.kVBxAHgkvZ18785uryH4CIi4BoAlKeubexz49dlQaObSvrf0Cr*yKkUXDCmwhBh2GJ5U6cQandeP6WLQlIOM!/r" mode="aspectFill"></image>
+</view>
+<view class="xiaohezi"></view>
+<view class='container'>
+    <button class='publish' bindtap='buttonTap' style="color: black; " plain="true">规则</button>
+    <modal hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
+        <view>
+            <image class="image" src="http://r.photo.store.qq.com/psc?/V512zyaa4DJhfz22XrEJ4HEUjd2FoozA/TmEUgtj9EK6.7V8ajmQrEKjbJMIPZv3U4mMsWCdyjvL4LF2bRLKlEIa69C18EOgYJbEoVZqchMXMesOMXqzvbVY*Or3BsaEZEg5uP73VSdg!/r" mode='aspectFill'></image>
+        </view>
+    </modal>
+</view>
+<view class="kongbai"></view>
+<view class="hezi">
+    <navigator url="/pages/setuser/setuser">
+        <image class="hhh" src="http://r.photo.store.qq.com/psc?/V512zyaa4DJhfz22XrEJ4HEUjd2FoozA/TmEUgtj9EK6.7V8ajmQrEHslLgcl8Vs*yxUXVTw.JWBXrE0O7QU3GQOdbkdwrpnEgYW80doZRgdoTC4dgmsqEfdQhai.VcA.4KD0O39CrbM!/r" mode=""></image>
+    </navigator>
+</view>
+<view class="hezi">
+    <navigator url="/pages/double/index">
+        <image class="hhh" src="http://r.photo.store.qq.com/psc?/V512zyaa4DJhfz22XrEJ4HEUjd2FoozA/TmEUgtj9EK6.7V8ajmQrEFD98oOjIdPbjjiEQJ1dTTwpW*IZLbHfskFl61CRD5fY*gQ0Qc8KnJl6tsW14Z22AU42Iua.fHBUVYVM1Uf9Xt4!/r" mode=""></image>
+    </navigator>
+</view>

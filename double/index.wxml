@@ -1,0 +1,5 @@
+<!--pages/double/index.wxml-->
+<view class="container">
+    <image class="setting" src="http://r.photo.store.qq.com/psc?/V512zyaa4DJhfz22XrEJ4HEUjd2FoozA/TmEUgtj9EK6.7V8ajmQrENzmaPStDpuGhxC.*I*A*M0SPMjtGIGvB4XUGHF1jVUsKxf*YSXdu3CfDTLTXZkvJU8MOhE3vmJMZY65ilgrGCc!/r"></image>
+    <view class="text">待开发发中。。。</view>
+</view>

@@ -1,0 +1,25 @@
+<view class="container">
+    <image class="setting"  src="http://r.photo.store.qq.com/psc?/V512zyaa4DJhfz22XrEJ4HEUjd2FoozA/TmEUgtj9EK6.7V8ajmQrEAgd10zQ*CEoNVzzPUmAUukkoCDh7WVgQUTAwjT4iQChUjUnyco71wqC7t8Wv8CyTG4yxDiZknBv4Uqv*G4mJk0!/r"></image>
+    <view wx:for="{{record}}" class="block">
+        <view class="bangdan">
+            <view class="username">玩家昵称：{{item.name}}</view>
+            <button class='publish' bindtap='buttonTap' data-name="{{item.name}}" style="color: black; "
+                plain="true">获得奖励</button>
+        </view>
+        <view class="xiaohezi"></view>
+        <modal hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
+            <view>
+                <view wx:for="{{prize}}">
+                    <view class="bangdan">
+                        <view class="prizename">奖励名称</view>
+                        <view class="prizename">{{item.prizename}}</view>
+                    </view>
+                    <view class="xiaohezi"></view>
+
+                </view>
+
+            </view>
+        </modal>
+
+    </view>
+</view>

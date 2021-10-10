@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.xiaohezi {
+    width: 100%;
+    height: 20rpx;
+}
+
+.prizename {
+    width: 50%;
+    position: relative;
+    top: 20%;
+}
+
+.bangdan {
+    display: flex;
+    flex-direction: row;
+}
+
+.publish {
+    position: relative;
+    top: 10%;
+    width: 50%;
+}
+
+.username {
+    font-weight:bold; 
+    font-family:"宋体";
+    width: 50%;
+    position: relative;
+    top: 20rpx
+}
+
+.setting{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
