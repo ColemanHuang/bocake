@@ -1,0 +1,78 @@
+/* .background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: 100% 100%;
+  z-index: -1;
+} */
+
+.xiaohezi {
+  width: 100%;
+  height: 50rpx;
+}
+
+.finish {
+  position: relative;
+  left: -5%;
+}
+
+.right {
+  position: relative;
+  width: 50%;
+
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  
+}
+
+.hezi {
+  width: 100%;
+  height: 300rpx;
+}
+
+.button {
+  background-color: blanchedalmond;
+  border-radius: 40%;
+  justify-content: space-around;
+  position: relative;
+  right: 5%;
+}
+
+.first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  left: 10%;
+}
+
+.name {
+  width: 30%;
+  position: relative;
+  left: 10%;
+  background-color: blanchedalmond;
+  text-align: center;
+}
+
+.buju {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  top: 30%;
+}
+
+.prize {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.setting {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
